@@ -8,8 +8,8 @@ namespace ApiAnalisisValores.Controllers
     [Route("[controller]")]
     public class StatisticsController : ControllerBase
     {
-        private readonly IStadisticsService _stadisticsService;
-        public StatisticsController(IStadisticsService stadisticsService)
+        private readonly IStatisticsService _stadisticsService;
+        public StatisticsController(IStatisticsService stadisticsService)
         {
             _stadisticsService = stadisticsService;
         }
@@ -17,7 +17,7 @@ namespace ApiAnalisisValores.Controllers
         [HttpPost]
         public ResponseDTO CalculatStadistics(RequestDTO requestDTO)
         {
-            return _stadisticsService.CalculatStadistics(requestDTO);
+            return _stadisticsService.CalculatStatistics(requestDTO);
         }
     }
 }
