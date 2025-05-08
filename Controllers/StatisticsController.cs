@@ -15,9 +15,9 @@ namespace ApiAnalisisValores.Controllers
         }
 
         [HttpPost]
-        public ResponseDTO GetStadistics(RequestDTO requestDTO)
+        public ResponseDTO CalculatStadistics(RequestDTO requestDTO)
         {
-            return _stadisticsService.GetStadistics(requestDTO);
+            return _stadisticsService.CalculatStadistics(requestDTO);
         }
     }
 }
